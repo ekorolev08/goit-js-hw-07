@@ -20,8 +20,8 @@ return `<li class= "gallery__item" id="preview">
     .join('');
 }
 
-galleryContainer.insertAdjacentHTML('beforeend', markup);
-galleryContainer.addEventListener('click', handlePhoto);
+container.insertAdjacentHTML('beforeend', markup);
+container.addEventListener('click', handlePhoto);
 
 function handlePhoto(event) {
     if (event.target === event.currentTarget) {
@@ -35,4 +35,4 @@ function handlePhoto(event) {
     modal.show();
 };
 
-console.log(galleryItems);
+// console.log(galleryItems);
