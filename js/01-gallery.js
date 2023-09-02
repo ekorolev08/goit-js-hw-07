@@ -29,10 +29,10 @@ function handlePhoto(event) {
     }
     event.preventDefault();
 
-    const modal = basicLightbox.create(
-        `<img src="${event.target.dataset.source}" alt="${event.target.alt}">`
+    const instance = basicLightbox.create(
+      `<img src="${event.target.dataset.source}" alt="${event.target.alt}">`
     );
-    modal.show();
+    instance.show();
 };
 
 // console.log(galleryItems);
